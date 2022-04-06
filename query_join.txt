@@ -1,0 +1,5 @@
+1. Selezionare tutti gli studenti iscritti al Corso di Laurea in Economia (68 risultati trovati)
+SELECT `degrees`.`name`, `students`.*
+FROM `degrees`
+INNER JOIN `students` ON `students`.`degree_id`=`degrees`.`id`
+WHERE `degrees`.`name`= 'corso di laurea in economia'
